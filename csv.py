@@ -1,5 +1,5 @@
 from wordsretriving import load
-from LoginPage import post
+from Memrise import post
 
 data = load()
 

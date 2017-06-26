@@ -7,4 +7,4 @@ for word in data:
     (level, words) = word
     print(level)
     print(words)
-    #post(level, words)
+    post(level, words)

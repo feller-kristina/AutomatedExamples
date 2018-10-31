@@ -1,3 +1,5 @@
+from time import sleep
+
 from selenium import webdriver
 
 driver = webdriver.Firefox()
@@ -9,10 +11,10 @@ signIn = driver.find_element_by_class_name("r101-sign-in--a__button")
 signIn.click()
 
 userName = driver.find_element_by_id("hm_amember_login")
-userName.send_keys("emrick.ephram@lnvoke.net")
+userName.send_keys("rylie.mahrus@0ne0ut.com")
 
 password = driver.find_element_by_id("hm_amember_pass")
-password.send_keys("vfxdf7M@")
+password.send_keys("hM4A1KZYx$MU")
 
 loginButton = driver.find_element_by_class_name("r101-sign-in--a__submit")
 loginButton.click()
@@ -29,9 +31,11 @@ for string in file:
     driver.get(urlLesson)
 
     script = "$('input[type=checkbox]').each(function(index, item) {" \
-             "  if (index < %s) {" \
+             "  if (index < %s && !item.hasAttribute('checked')) {" \
              "    item.click();" \
              "  }" \
              "})" % count
     driver.execute_script(script)
+    sleep(1)
+
 driver.quit()

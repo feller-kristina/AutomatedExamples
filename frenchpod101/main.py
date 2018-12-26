@@ -11,10 +11,10 @@ signIn = driver.find_element_by_class_name("r101-sign-in--a__button")
 signIn.click()
 
 userName = driver.find_element_by_id("hm_amember_login")
-userName.send_keys("reynolds.jude@daleloan.com")
+userName.send_keys("kaleb.wynter@plutofox.com")
 
 password = driver.find_element_by_id("hm_amember_pass")
-password.send_keys("0Y9xmZmwK00#")
+password.send_keys("5aj$7*XcVSa&")
 
 loginButton = driver.find_element_by_class_name("r101-sign-in--a__submit")
 loginButton.click()
